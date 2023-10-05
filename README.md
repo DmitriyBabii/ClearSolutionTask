@@ -72,6 +72,12 @@ DELETE localhost/users/{userId}
 ## Validation
 Validation was done using annotations in the User class and using **DateUtils** class for date.
 
+> Phone number must be in the format +380XXXXXXXXX
+
+> Email must be valid (with '@')
+
+> All String data must be NotBlank (but phone number can be null)
+
 ## Properties
 User must be 18 years old so there is '**user.min-age**' in the properties.
 > This property is used in the **UserService**.
